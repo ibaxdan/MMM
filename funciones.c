@@ -10,14 +10,6 @@ float calcularMedia(int arr[], int size) {
     return (float)suma / size;
 }
 
-// Función para calcular la mediana (asumiendo que el arreglo ya está ordenado)
-float calcularMediana(int arr[], int size) {
-    if (size % 2 == 0)
-        return (arr[size / 2 - 1] + arr[size / 2]) / 2.0;
-    else
-        return arr[size / 2];
-}
-
 // Función para calcular la moda
 void encontrar_moda(int numeros[], int tamano) {
     int max_frecuencia = 0, moda = -1;
