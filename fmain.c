@@ -15,12 +15,9 @@ int main() {
     // Calcular la media
     float media = calcularMedia(numeros, SIZE);
     
-    // Calcular la mediana
-    float mediana = ordenar(numeros, SIZE);
     
-    // Encontrar el número mayor y el menor
-    int mayor, menor;
-    encontrarMayorYMenor(numeros, SIZE, &mayor, &menor);
+    int mayor, menor, mediana;
+    ordenar(numeros, SIZE, &mayor, &menor, &mediana);
 
     // Mostrar los resultados
     printf("\nResultados:\n");

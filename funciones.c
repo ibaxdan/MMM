@@ -38,19 +38,9 @@ void encontrar_moda(int numeros[], int tamano) {
         printf("No existe un número que se repita.\n");
     }
 }
-
-// Función para encontrar el número mayor y el menor
-void encontrarMayorYMenor(int arr[], int size, int *mayor, int *menor) {
-    *mayor = arr[0];
-    *menor = arr[0];
-    for (int i = 1; i < size; i++) {
-        if (arr[i] > *mayor) *mayor = arr[i];
-        if (arr[i] < *menor) *menor = arr[i];
-    }
-}
-
+                  
 // Función para ordenar el arreglo
-int ordenar(int arr[], int size) {
+void ordenar(int arr[], int size, int *mayor, int *menor, int *mediana) {
     for (int i = 0; i < size - 1; i++) {
         for (int j = i + 1; j < size; j++) {
             if (arr[i] > arr[j]) {
@@ -60,5 +50,7 @@ int ordenar(int arr[], int size) {
             }
         }
     }
-    return arr[4];
+    *mayor = arr[9];
+    *menor = arr[0];
+    *mediana = arr[4];
 }
