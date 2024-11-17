@@ -15,8 +15,9 @@ int main() {
     // Calcular la media
     float media = calcularMedia(numeros, SIZE);
     
-    
-    int mayor, menor, mediana;
+
+    int mayor, menor; 
+    float mediana;
     ordenar(numeros, SIZE, &mayor, &menor, &mediana);
 
     // Mostrar los resultados
