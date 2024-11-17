@@ -40,7 +40,7 @@ void encontrar_moda(int numeros[], int tamano) {
 }
                   
 // Función para ordenar el arreglo
-void ordenar(int arr[], int size, int *mayor, int *menor, int *mediana) {
+void ordenar(int arr[], int size, int *mayor, int *menor, float *mediana) {
     for (int i = 0; i < size - 1; i++) {
         for (int j = i + 1; j < size; j++) {
             if (arr[i] > arr[j]) {
